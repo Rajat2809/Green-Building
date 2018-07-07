@@ -1,0 +1,234 @@
+h3{
+    font-family: TitilliumWebReg, serif;
+}
+
+p{
+    font-family: TitilliumWebLight, serif;
+    /*padding: 0 30px;*/
+    color: #999999;
+}
+
+.bold{
+    font-family: TitilliumWebBold, serif;
+    padding:0;
+    margin: 0;
+}
+
+input, select {
+    width: 95%;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.lightGray {
+    color: #bfbfbf;
+}
+
+.greenColor {
+    color: #2cb1ba;
+}
+
+.alignLeft {
+    text-align: left;
+    padding-bottom: 0;
+    padding-left: 30px;
+}
+
+.alignRight {
+    text-align: right;
+    padding-bottom: 0;
+}
+
+.redColor {
+    color: #cc0000;
+}
+
+.forgot {
+    font-family: TitilliumWebReg, serif;
+    color: #9b9b9b;
+    margin-bottom: 20px;
+}
+
+.toOtherPage{
+    font-family: TitilliumWebReg, serif;
+    color: #9b9b9b;
+}
+
+.toOtherPage:hover {
+    font-family: TitilliumWebReg, serif;
+    color: #2cb1ba;
+    transition: 400ms;
+}
+
+/* sign in page Style
+----------------------------------------------*/
+
+#signIn {
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+#signIn a.goto-btn {
+    font-family: TitilliumWebLight, serif;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #2cb1ba;
+    color: #2cb1ba;
+    background: transparent;
+    transition: all 0.5s;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+#signIn input.goto-btn {
+    font-family: TitilliumWebLight, serif;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #2cb1ba;
+    color: #2cb1ba;
+    background: transparent;
+    transition: all 0.5s;
+    padding: 3px 30px;
+    border-radius: 5px;
+}
+
+#signIn p{
+    font-family: TitilliumWebLight, serif;
+}
+
+#signIn input.goto-btn:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+#signIn .box {
+    width: 100%;
+    border: 1px solid #D4D4D4;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#signIn .box:hover {
+    border: 1px solid #2cb1ba;
+    transition: all 0.5s;
+}
+
+#signIn .box:hover h3{
+    color: #2cb1ba;
+    transition: all 0.5s;
+}
+
+#signIn .box:hover input.goto-btn {
+    color: #2cb1ba;
+    border: 1px solid #2cb1ba;
+}
+
+#signIn .box input.goto-btn:hover{
+    color: #FFFFFF;
+    border: 1px solid #2cb1ba;
+    background: #2cb1ba;
+}
+#signIn .box a.goto-btn:hover{
+    color: #FFFFFF;
+    border: 1px solid #2cb1ba;
+    background: #2cb1ba;
+}
+#signIn .box:hover p{
+    color: #232323;
+    transition: all 0.5s;
+}
+
+#signIn .box-area {
+    padding-bottom: 6%;
+}
+
+#signInBtn {
+    /*margin: 20px 0;*/
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* register page Style
+----------------------------------------------*/
+
+#register {
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+#register_form input, select {
+    margin-bottom: 5px;
+}
+
+#register a.goto-btn {
+    font-family: TitilliumWebLight, serif;
+    display: inline-block;
+    /*width: 47%;*/
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #9b9b9b;
+    color: #9b9b9b;
+    background: transparent;
+    transition: all 0.5s;
+    padding: 3px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#register a.goto-btn:hover {
+    border: 1px solid #2cb1ba;
+    color: #2cb1ba;
+}
+
+#register input.goto-btn {
+    font-family: TitilliumWebLight, serif;
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #2cb1ba;
+    color: #2cb1ba;
+    background: transparent;
+    transition: all 0.5s;
+    padding: 3px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#register input.goto-btn:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+.input_short {
+    width: 47%;
+}
+
+#register_form p{
+    font-family: TitilliumWebReg, serif;
+    color: #9b9b9b;
+    margin: 0;
+}
+
+input[type=date] {
+    /*width: 84%;*/
+    font-family: TitilliumWebLight, serif;
+    line-height: 1.8;
+    margin-top: 0;
+}
+
+#toNewReg {
+    width: 60%;
+}
+
+/* Manufacturer and salesman register page Style
+----------------------------------------------*/

@@ -1,0 +1,238 @@
+/* top Section
+--------------------------------------------------------------------------------------------------------------- */
+
+#shopping_top {
+    background: linear-gradient(45deg, #bbe698, #2cb1ba);
+    padding: 40px 0;
+}
+
+#shopping_top P {
+    font-family: TitilliumWebLight, sans-serif;
+}
+
+/* order detail Section
+--------------------------------------------------------------------------------------------------------------- */
+
+/* orderList Section
+---------------------------------------------------*/
+#orderDetail {
+    padding: 20px 0;
+}
+
+#orderDetail h1, h2, h3, h4, h5, h6{
+    font-family: TitilliumWebBold, sans-serif;
+    padding: 10px;
+}
+
+#orderDetail p{
+    font-family: TitilliumWebLight, sans-serif;
+}
+
+
+#orderList {
+    background: #ffffff;
+    color: #232323;
+}
+
+#orderList .orderStep{
+    background: #ebebeb;
+    color: #232323;
+}
+
+#continueShopping {
+    width: 49%;
+}
+
+#emptyCart {
+    float:right
+}
+
+
+.productList img {
+    width:100%;
+    height:100%;
+    border: 1px solid #d2d2d2;
+}
+
+/*.productList h5 {*/
+    /*padding: 0;*/
+    /*margin-left: -10px;*/
+/*}*/
+
+#checkOut .row {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: row;
+}
+
+.singleProduct {
+    padding-top: 10px;
+}
+
+input#promoCode {
+    float: right;
+    padding: 0 10px;
+}
+
+input#applyPromo {
+    margin-bottom: 20px;
+}
+
+input.removeItem {
+    font-family: TitilliumWebBold, sans-serif;
+    width: 100%;
+    background: #dbdbdb;
+    color: #232323;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    position:relative;
+}
+
+input.removeItem:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+input#emptyCart {
+    font-family: TitilliumWebBold, sans-serif;
+    width: 49%;
+    background: transparent;
+    color: #2cb1ba;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #2cb1ba;
+    position:relative;
+}
+
+input#emptyCart:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+input[type=radio] {
+    width: 15px;
+}
+
+label{
+    font-family: TitilliumWebReg, sans-serif;
+    padding-left: 10px;
+}
+
+#paymentCheck.checkmark {
+    top: 135px;
+}
+
+input.checkoutBtn {
+    font-family: TitilliumWebBold, sans-serif;
+    width: 100%;
+    background: linear-gradient(45deg, #bbe698, #2cb1ba);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    position:relative;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+input.checkoutBtn:hover {
+    color: #232323;
+    font-size: 20px;
+    box-shadow: 0 0 20px #bbe698;
+}
+
+input.grayBtn {
+    font-family: TitilliumWebBold, sans-serif;
+    width: 100%;
+    background: #ebebeb;
+    color: #232323;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    position:relative;
+}
+
+input.grayBtn:hover {
+    color: #ffffff;
+    background: #bbe698;
+    /*box-shadow: 0 0 20px #bbe698;*/
+}
+
+#orderNote {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #2cb1ba;
+    /*display:none;*/
+    height: 118px;
+    padding: 10px;
+    resize: none;
+}
+
+#orderNote:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #2cb1ba;
+}
+
+
+/* checkOut Section
+---------------------------------------------------*/
+#checkOut {
+    background: #232323;
+    color: #ffffff;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+#checkOut hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color: #4a4a4a;
+    height: 1px;
+    margin: 0;
+}
+
+#checkOut input[type="text"] {
+    color: #232323;
+}
+
+#checkOut h5 {
+    font-family: TitilliumWebReg, sans-serif;
+    /*margin-top: -10px;*/
+}
+
+

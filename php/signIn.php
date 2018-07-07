@@ -1,0 +1,76 @@
+<?php ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Building - Sign In</title>
+    <meta name="description" content="Home page of Green Building Project">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel='icon' href='../assets/images/icons/tempLogo.ico' type=‘image/x-ico’>
+    <link rel="stylesheet" href="../assets/cssLib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signInRegister.css">
+</head>
+
+<body>
+<!-- Top Bar
+================================================== -->
+<div id="headerPHP"></div>
+
+<!-- Register and Sign In Section
+================================================== -->
+<section id="signIn">
+    <div class="container">
+        <div class="row">
+            <div class="skill-home">
+                <div class="clearfix">
+                    <h3 class="alignLeft">SIGN IN OR CREATE AN ACCOUNT</h3><br>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="box-area alignLeft">
+                                <h3 class="">New Customer</h3>
+                                <p>By creating an account with our website, you will be able to move through the checkout process faster,
+                                    store multiple shipping addresses, view and track your orders in your account and more.</p>
+                                <a href="../html/register.html" class="scroll goto-btn">Go To Register</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="box-area alignLeft">
+                                <h3 class="">Want To Sign In</h3>
+                                <p>If you have an account with us, please log in.</p><br>
+                                <form id="SignIn_form" action="../php/checkSignIn.php" method="post">
+                                    <p class="bold">Email As ID <span class="redColor">*</span></p>
+                                    <input id="signIn_email" type="email" placeholder="Your Email" name="SignInUser" required><br>
+                                    <p class="bold">Password <span class="redColor">*</span></p>
+                                    <input id="signIn_password" type="password" placeholder="Your Password" name="SignInPass" required><br>
+                                    <a class="forgot" href="#">Forgot Your Password?</a>
+                                    <input type="Submit" id="signIn" name="Sign In" value="Sign In" class="scroll goto-btn"/>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--</section>-->
+
+
+<!-- footer and go to top button
+================================================== -->
+<div id="footerPHP"></div>
+<!-- javascript
+    ================================================== -->
+<script src="../assets/jsLib/jquery.min.js"></script>
+<script src="../assets/jsLib/bootstrap.min.js"></script>
+<script src="../js/scrollup.js"></script>
+<script src="../js/PHPheaderFooter.js"></script>
+</body>
+</html>

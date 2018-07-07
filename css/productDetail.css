@@ -1,0 +1,549 @@
+.alignCenter {
+    text-align: center;
+}
+
+/* product
+--------------------------------------------------------------------------------------------------------------- */
+
+#product {
+    background: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #828282;
+    padding-bottom: 40px;
+}
+
+#product .overlay {
+    padding: 7% 0;
+    background-attachment: fixed;
+    height: 10%;
+}
+
+#product h1 {
+    color: #232323;
+    line-height: 64px;
+    font-size: 44px;
+    margin-top: 80px;
+}
+
+.content-heading p.lead {
+    color: #FFF;
+    margin-bottom: 50px;
+    font-family: TitilliumWebLight, serif;
+}
+
+/* mainPart Style
+--------------------------------------------------------------------------------------------------------------- */
+#mainPart {
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 50px 0;
+}
+
+/* productDetail Style
+--------------------------------------------------------------------------------------------------------------- */
+#productDetail {
+    padding: 40px 0;
+}
+
+#productDetail h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+#productDetail h3 {
+    font-family: TitilliumWebBold, sans-serif;
+    color: #232323;
+}
+
+#productDetail .productTitle h6 {
+    font-family: TitilliumWebBold, sans-serif;
+    color: #2cb1ba;
+}
+
+#productDetail .productTitle ul {
+    margin: 0; padding: 0;
+}
+
+#productDetail .productTitle{
+    font-family: TitilliumWebLight, sans-serif;
+    margin: 0;
+}
+
+#productDetail .price {
+    color: #2cb1ba;
+}
+
+#productDetail .thumbnailImg {
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 200px;
+    border: 1px solid #ccc;
+}
+
+#productDetail .thumbnailImg:hover {
+    cursor: pointer;
+    border: 1px solid #2cb1ba;
+}
+
+#productDetail .thumbnailList {
+    padding-top: 20px;
+}
+
+#productDetail #mainImg {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+}
+
+@media(max-width:500px){
+    #productDetail .thumbnailImg {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+    }
+}
+
+#productDetail p {
+    font-family: TitilliumWebLight, sans-serif;
+    color: #232323;
+    /*text-align: center;*/
+}
+
+.greenStar {
+    padding: 10px 0;
+}
+
+.pro-rate li{
+    display:inline-block;
+}
+
+.pro-rate li a{
+    font-family: TitilliumWebReg, sans-serif;
+    color: #9b9b9b;
+    padding: 0.1em 0;
+    /*font-size: 0.8em;*/
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+}
+.pro-rate li a:hover{
+    color:#2cb1ba;
+}
+
+.pro-rate li p {
+    font-family: TitilliumWebLight, sans-serif;
+    color: #232323;
+}
+
+.checked {
+    color: #2cb1ba;
+}
+
+.productTitle h5 {
+    margin-top: 20px;
+}
+
+.product-colors li {
+    display:inline-block;
+}
+
+.product-colors li a span {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+
+.color1 span{
+    background:#D2D6D5;
+}
+.color2 span{
+    background:#008CB7;
+}
+.color3 span{
+    background:#F3349E;
+}
+.color4 span{
+    background:#93D52D;
+}
+.color5 span{
+    background:#FD9812;
+}
+.color6 span{
+    background:#000000;
+}
+.color7 span{
+    background:#7800F0;
+}
+.color8 span{
+    background:#F6EF04;
+}
+
+input#quantityInput {
+    width: 150px;
+}
+
+input#detailToCart {
+    font-family: TitilliumWebBold, sans-serif;
+    width: 250px;
+    background: transparent;
+    color: #2cb1ba;
+    font-size: 1.2em;
+    padding: 0.7em 1em;
+    border-radius: 5px;
+    border: 2px solid #2cb1ba;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+input#detailToCart:hover{
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+
+/* product review Style
+--------------------------------------------------------------------------------------------------------------- */
+#productDescription {
+    background: #ffffff;
+}
+
+#productDescription h3{
+    font-family: TitilliumWebBold, sans-serif;
+}
+
+#productDescription.tabTitle {
+    font-family: TitilliumWebBold, sans-serif;
+}
+
+#productDescription .tab {
+    float: left;
+    /*border: 1px solid #ccc;*/
+    background-color: #ffffff;
+    width: 20%;
+    height: 300px;
+}
+
+#productDescription .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    /*border: 1px solid #d8d8d8;*/
+}
+
+#productDescription .tab button:hover {
+    background-color: #2cb1ba;
+    color: #ffffff;
+}
+
+#productDescription .tab button.active {
+    background-color: #ffffff;
+    color: #2cb1ba;
+    border: 1px solid #2cb1ba;
+    border-right: none;
+}
+
+#productDescription .tabContent {
+    float: left;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 5px;
+    width: 80%;
+    /*border-left: none;*/
+    min-height: 300px;
+    max-height: 1000px;
+    color: #232323;
+}
+
+#productDescription .tabContent p {
+    font-family: TitilliumWebReg, sans-serif;
+}
+
+#productDescription .tabContent pre {
+    background-color: #ffffff;
+    border: none;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+#customerReview {
+    font-family: TitilliumWebReg, sans-serif;
+}
+
+button#addReview {
+    /*background: linear-gradient(45deg, #bbe698, #2cb1ba);*/
+    color: #2cb1ba;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #2cb1ba;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+button#addReview:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+#inputReviewArea {
+    text-align: center;
+}
+
+#inputReview {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #2cb1ba;
+    /*display:none;*/
+    height: 118px;
+    padding: 10px;
+    resize: none;
+}
+
+#inputReview:focus {
+    outline: none !important;
+    box-shadow: 0 0 10px #2cb1ba;
+}
+
+input#submitReview {
+    width: 50%;
+    height: 40px;
+    color: #2cb1ba;
+    border-radius: 5px;
+    border: 1px solid #2cb1ba;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+input#submitReview:hover {
+    background: #2cb1ba;
+    color: #ffffff;
+}
+
+hr.review {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.reviewHistory ul{
+    margin: -15px 0 0 0;
+    padding: 0;
+}
+
+/*customer add rating starts here =====================*/
+.ratingStar {
+    float: left;
+    padding-top: 10px;
+}
+
+.rating {
+    /*float: left;*/
+    width: 100%;
+    text-align: left;
+}
+.rating span {
+    float: right;
+    /*float: left;*/
+    position: relative;
+}
+
+.rating span input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    cursor:pointer;
+}
+.rating span label {
+    background-image: url("../assets/images/icons/star_gray.png");
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    margin-right: 2px;
+    line-height: 30px;
+    cursor:pointer;
+}
+.rating span:hover ~ span label,
+.rating span:hover label,
+.rating span.checked label,
+.rating span.checked ~ span label {
+    background-image: url("../assets/images/icons/star_green.png");
+    color: #ffffff;
+    cursor:pointer;
+}
+
+/* related product Style
+--------------------------------------------------------------------------------------------------------------- */
+hr {
+    display: block;
+    margin: 40px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    /*border-style: inset;*/
+    /*border-width: 1px;*/
+    /*background-color: #cccccc;*/
+    border-top: 1px solid #cccccc;
+}
+
+#relatedProduct {
+    background: #ffffff;
+    color: #232323;
+}
+
+#relatedProduct h3{
+    font-family: TitilliumWebBold, sans-serif;
+    padding-left: 15px;
+}
+
+#relatedProduct .product-pic a img{
+    display:block;
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+}
+
+#relatedProduct .product-grid-head{
+    padding:1em;
+}
+
+#relatedProduct .product-pic p{
+    /*padding: 0em 1em 1em 1em;*/
+    color: #D6D6D6;
+}
+
+#relatedProduct .product-pic p span{
+    color: #999;
+    /*font-size: 0.8em;*/
+}
+
+#relatedProduct .product-pic p a{
+    display: block;
+    color: #232323;
+}
+
+#relatedProduct .product-pic p a:hover{
+    color: #2cb1ba;
+}
+
+
+#relatedProduct .addToCart span{
+    width: 40px;
+    height: 40px;
+    background: url(../assets/images/icons/product_addToCart.png) no-repeat;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor:pointer;
+    transition: 0.5s all;
+    z-index:1;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+#relatedProduct .addToCart span:hover {
+    background: url(../assets/images/icons/product_addToCart_green.png) no-repeat;
+}
+
+.product-grid{
+    width: 100%;
+    margin: 0 4% 4% 0;
+    float: left;
+    border: 1px solid #d8d8d8;
+    position: relative;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.product-grid:hover {
+    box-shadow: 0px 1px 11px #2cb1ba;
+    z-index: 1;
+}
+
+.product-info-cust {
+    float: left;
+    width: 50%;
+    padding: 0.5em 1em;
+    text-align: center;
+    background: #d8d8d8;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.product-info-cust:hover {
+    background: #2cb1ba;
+}
+
+.product-info-cust:hover a{
+    color: #ffffff;
+}
+
+.product-info-cust a{
+    color: #2A2323;
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: 600;
+}
+
+.product-info a {
+    font-size: 16px;
+}
+
+.product-info-price {
+    float: right;
+    background: #fff;
+    width: 50%;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.product-info-price a {
+    color: #232323;
+}
+
+.product-info-price a:hover {
+    color: #2cb1ba;
+    text-decoration: none;
+}
+
+#relatedContent {
+    padding: 40px 0;
+}
+
+@media only screen and (max-width: 991px){
+
+}

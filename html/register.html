@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Building - Register</title>
+    <meta name="description" content="Home page of Green Building Project">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel='icon' href='../assets/images/icons/tempLogo.ico' type=‘image/x-ico’>
+    <link rel="stylesheet" href="../assets/cssLib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signInRegister.css">
+</head>
+<body>
+<!-- Top Bar
+================================================== -->
+<div id="headerDiv"></div>
+
+<!-- Register and Sign In Section
+================================================== -->
+<section id="register">
+    <div class="container">
+        <div class="row">
+            <div class="skill-home">
+                <div class="clearfix">
+                    <h3 class="alignLeft">CREATE AN ACCOUNT - REGULAR USER</h3><br>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="box">
+                            <div class="box-area alignLeft">
+                                <form id="register_form" action="../php/insert.php" method="post">
+                                    <input id="register_firstName" type="text" class="input_short" placeholder="First Name" required name="reg_fName">
+                                    <input id="register_lastName" type="text" class="input_short" placeholder="Last Name" required name="reg_lName">
+                                    <input id="register_company" type="text" class="" placeholder="Company Name (Optional)" name="reg_compName">
+                                    <p>Birthday: </p><input id="register_birthday" type="date" data-date="" class="" data-date-format="YYYY MMMM DD" value="2000-06-01" required name="reg_birth">
+                                    <input id="register_address" type="text" placeholder="Address" required name="reg_address">
+                                    <input id="register_invitationCode" type="text" placeholder="Invitation Code (Optional)" name="reg_invCode">
+                                    <input id="register_phone" type="number" placeholder="Phone Number" required name="reg_phone">
+                                    <input id="register_email" type="email" placeholder="Email As ID" required name="reg_email">
+                                    <input id="register_password1" type="password" placeholder="Your Password" required name="reg_pass1">
+                                    <input id="register_password2" type="password" placeholder="Re-type Your Password" required name="reg_pass2">
+                                    <input type="submit" name="submit" value="Submit" class="scroll goto-btn"/>
+                                </form>
+                                <!--<a class="toOtherPage" href="register_manu&sales.html">Want to register as Manufacturer or Salesman? Click here >></a>-->
+                                <a class="scroll goto-btn" href="signIn.html">Go back to SIGN IN  >></a>
+                                <a id="toNewReg" class="scroll goto-btn" href="register_manu&sales.html">Register as Manufacturer or Salesman</a>
+                                <!--<a id="register_btn" href="" class="scroll goto-btn">REGISTER</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer and go to top button
+================================================== -->
+<div id="footerDiv"></div>
+<!-- javascript
+    ================================================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+<script src="../assets/jsLib/jquery.min.js"></script>
+<script src="../assets/jsLib/bootstrap.min.js"></script>
+<script src="../js/scrollup.js"></script>
+<script src="../js/commonHeaderFooter.js"></script>
+<script src="../js/register.js"></script>
+</body>
+</html>

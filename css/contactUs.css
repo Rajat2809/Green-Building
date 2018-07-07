@@ -1,0 +1,183 @@
+
+/* contact
+--------------------------------------------------------------------------------------------------------------- */
+/* contact Style
+--------------------------------------------------------------------------------------------------------------- */
+
+#contact {
+    background: url(../assets/images/index/indexBack.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #828282;
+}
+#contact .overlay {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+    padding: 7% 0;
+    background-attachment: fixed;
+    height: 10%;
+}
+
+#contact h1 {
+    color: #2cb1ba;
+    line-height: 64px;
+    font-size: 44px;
+    margin-top: 80px;
+}
+
+.content-heading p.lead {
+    color: #FFF;
+    margin-bottom: 50px;
+    font-family: TitilliumWebLight, serif;
+}
+
+/* office Style
+--------------------------------------------------------------------------------------------------------------- */
+#office {
+    background: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#office h2 {
+    color: #2cb1ba;
+    line-height: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    /*margin-bottom: 30px;*/
+}
+
+#office address {
+    font-family: TitilliumWebReg, serif;
+}
+
+#office .imgCenter {
+    text-align: center;
+}
+
+#office h4 {
+    font-family: TitilliumWebReg, serif;
+}
+
+#office .answerQuickly{
+    padding-right: 20px;
+}
+
+/* contact_clo1 Style
+----------------------------------------------*/
+#office #contact_clo1 #contact_faq {
+    background-image: url('../assets/images/icons/question_9b9b9b.png');
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#office #contact_clo1:hover #contact_faq {
+    background-image: url('../assets/images/icons/question_green.png');
+    transition: all 0.5s;
+}
+
+#office #contact_clo1:hover h4 {
+    color: #2cb1ba;
+    transition: all 0.5s;
+}
+
+/* contact_clo2 Style
+----------------------------------------------*/
+#office #contact_clo2 #contact_chat {
+    background-image: url('../assets/images/icons/chat_9b9b9b.png');
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#office #contact_clo2:hover #contact_chat {
+    background-image: url('../assets/images/icons/chat_green.png');
+    transition: all 0.5s;
+}
+
+#office #contact_clo2:hover h4 {
+    color: #2cb1ba;
+    transition: all 0.5s;
+}
+
+/* contact_clo3 Style
+----------------------------------------------*/
+#office #contact_clo3 #contact_sugg {
+    background-image: url('../assets/images/icons/suggestion_9b9b9b.png');
+    background-position: center;
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+    /*margin: auto;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#office #contact_clo3:hover #contact_sugg {
+    background-image: url('../assets/images/icons/suggestion_green.png');
+    transition: all 0.5s;
+}
+
+#office #contact_clo3:hover h4 {
+    color: #2cb1ba;
+    transition: all 0.5s;
+}
+
+/* send message Style
+----------------------------------------------*/
+#contact_submit {
+    margin-top: 10px;
+}
+
+#office input, select {
+    width: 99%;
+    padding: 0 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#office textarea, select {
+    width: 99%;
+    height: 118px;
+    padding: 0 10px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#office textarea:focus {
+    outline: none !important;
+    border:1px solid #2cb1ba;
+    box-shadow: 0 0 10px #2cb1ba;
+}
+
+#office a.goto-btn {
+    font-family: TitilliumWebLight, serif;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #2cb1ba;
+    color: #2cb1ba;
+    background: transparent;
+    transition: all 0.5s;
+    padding: 3px 30px;
+    border-radius: 5px;
+}

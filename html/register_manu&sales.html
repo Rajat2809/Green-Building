@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Building - Register: Manufacturer and Salesman</title>
+    <meta name="description" content="Home page of Green Building Project">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel='icon' href='../assets/images/icons/tempLogo.ico' type=‘image/x-ico’>
+    <link rel="stylesheet" href="../assets/cssLib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/signInRegister.css">
+</head>
+<body>
+<!-- Top Bar
+================================================== -->
+<div id="headerDiv"></div>
+
+<!-- Register Section
+================================================== -->
+<!--<section >-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="skill-home">-->
+                <!--<div class="clearfix">-->
+                    <!--<h3 class="alignLeft">CREATE AN ACCOUNT - MANUFACTURER NAD SALESMAN</h3><br>-->
+                    <!--<div class="col-md-3"></div>-->
+                    <!--<div class="col-md-6">-->
+                        <!--<div class="box">-->
+                            <!--<div class="box-area alignLeft">-->
+                                <!--<form id="register_form">-->
+                                    <!--<input id="register_firstName" type="text" class="input_short" placeholder="First Name" required>-->
+                                    <!--<input id="register_lastName" type="text" class="input_short" placeholder="Last Name" required>-->
+                                    <!--<input id="register_company" type="text" class="input_short" placeholder="Company Name">-->
+                                    <!--<input id="register_birthday" type="number" class="input_short" placeholder="Birthday: Year-Month-Day" required>-->
+                                    <!--<input id="register_address" type="text" placeholder="Address" required>-->
+                                    <!--<input id="register_invitationCode" type="text" placeholder="Invitation Code (Optional)">-->
+                                    <!--<input id="register_phone" type="number" placeholder="Phone Number" required>-->
+                                    <!--<input id="register_email" type="email" placeholder="Email As ID" required>-->
+                                    <!--<input id="register_password1" type="password" placeholder="Your Password" required>-->
+                                    <!--<input id="register_password2" type="password" placeholder="Re-type Your Password" required>-->
+                                <!--</form>-->
+                                <!--<a class="toOtherPage" href="signIn.html">Already had an account? Go to sign in  >></a>-->
+                                <!--<a class="toOtherPage" href="signIn.html">Already had an account? Go to sign in  >></a>-->
+                                <!--<a id="register_btn" href="#detail" class="scroll goto-btn">REGISTER</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<section id="register_manuSales">
+    <div class="container">
+        <h3>CREATE AN ACCOUNT - MANUFACTURER NAD SALESMAN</h3>
+        <p>Here you can choose to register as a Manufacturer or Salesman</p>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#register_manufacturer">Manufacturer</a></li>
+            <li><a data-toggle="tab" href="#register_salesman">Salesman</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="register_manufacturer" class="tab-pane fade in active">
+                <h3>Manufacturer</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Register as a Manufacturer can let you provide your products here for the green solutions.</p>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="box">
+                            <div class="box-area alignLeft">
+                                <form id="register_form_manu">
+                                    <input id="register_manu_firstName" type="text" class="input_short" placeholder="First Name" required>
+                                    <input id="register_manu_lastName" type="text" class="input_short" placeholder="Last Name" required>
+                                    <input id="register_manu_company" type="text" class="input_short" placeholder="Company Name">
+                                    <input id="register_manu_birthday" type="number" class="input_short" placeholder="Birthday: Year-Month-Day" required>
+                                    <input id="register_manu_address" type="text" placeholder="Address" required>
+                                    <input id="register_manu_invitationCode" type="text" placeholder="Invitation Code (Optional)">
+                                    <input id="register_manu_phone" type="number" placeholder="Phone Number" required>
+                                    <input id="register_manu_email" type="email" placeholder="Email As ID" required>
+                                    <input id="register_manu_password1" type="password" placeholder="Your Password" required>
+                                    <input id="register_manu_password2" type="password" placeholder="Re-type Your Password" required>
+                                </form>
+                                <a class="toOtherPage" href="register.html">Want to regular Register? Click here >></a><br>
+                                <a class="scroll goto-btn" href="signIn.html">Go back to SIGN IN  >></a>
+                                <a id="register_manu_btn" href="#detail" class="scroll goto-btn">REGISTER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="register_salesman" class="tab-pane fade">
+                <h3>Salesman</h3>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Register as a Salesman can let you connect the Manufacturer and Regular User.</p>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="box">
+                            <div class="box-area alignLeft">
+                                <form id="register_form_sales">
+                                    <input id="register_sales_firstName" type="text" class="input_short" placeholder="First Name" required>
+                                    <input id="register_sales_lastName" type="text" class="input_short" placeholder="Last Name" required>
+                                    <input id="register_sales_company" type="text" class="input_short" placeholder="Company Name">
+                                    <input id="register_sales_birthday" type="number" class="input_short" placeholder="Birthday: Year-Month-Day" required>
+                                    <input id="register_sales_address" type="text" placeholder="Address" required>
+                                    <input id="register_sales_invitationCode" type="text" placeholder="Invitation Code (Optional)">
+                                    <input id="register_sales_phone" type="number" placeholder="Phone Number" required>
+                                    <input id="register_sales_email" type="email" placeholder="Email As ID" required>
+                                    <input id="register_sales_password1" type="password" placeholder="Your Password" required>
+                                    <input id="register_sales_password2" type="password" placeholder="Re-type Your Password" required>
+                                </form>
+                                <a class="toOtherPage" href="register.html">Want to regular Register? Click here >></a><br>
+                                <a class="scroll goto-btn" href="signIn.html">Go back to SIGN IN  >></a>
+                                <a id="register_sales_btn" href="#detail" class="scroll goto-btn">REGISTER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer and go to top button
+================================================== -->
+<div id="footerDiv"></div>
+<!-- javascript
+    ================================================== -->
+<script src="../assets/jsLib/jquery.min.js"></script>
+<script src="../assets/jsLib/bootstrap.min.js"></script>
+<script src="../js/scrollup.js"></script>
+<script src="../js/commonHeaderFooter.js"></script>
+</body>
+</html>

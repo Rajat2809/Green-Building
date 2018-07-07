@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Building - Product Detail</title>
+    <meta name="description" content="Home page of Green Building Project">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel='icon' href='../assets/images/icons/tempLogo.ico' type=‘image/x-ico’>
+    <link rel="stylesheet" href="../assets/cssLib/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/cssLib/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/productDetail.css">
+</head>
+
+<body>
+
+<!-- Top Bar
+================================================== -->
+<div id="headerDiv"></div>
+
+<!-- product Section
+================================================== -->
+<section id="product">
+    <section id="mainPart">
+        <!-- product detail
+        ================================================== -->
+        <div id="productDetail" class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img id="mainImg" src="../assets/images/products/detailExp1.jpg">
+                    <div class="row thumbnailList">
+                        <div class="col-sm-4"><img class="thumbnailImg" src="../assets/images/products/detailExp1.jpg" alt="product image 1"></div>
+                        <div class="col-sm-4"><img class="thumbnailImg" src="../assets/images/products/detailExp2.jpg" alt="product image 2"></div>
+                        <div class="col-sm-4"><img class="thumbnailImg" src="../assets/images/products/detailExp3.jpg" alt="product image 3"></div>
+                    </div>
+                </div>
+                <div class="col-md-8 productTitle">
+                    <h6>Justlight Company</h6>
+                    <h3>LED Corn Energy Saving Lamp Light Bulbs Daylight E26 2500 Lm Daylight 6500K Cool White,
+                        Room ledbulbs Lamps Plus Outdoor Garage Lighting Super Bright Led Lamp Bulb Lights 25W</h3>
+                    <ul class="pro-rate">
+                        <li class="product-rate">
+                            <div class="greenStar">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </li>
+                        <li><p>55 Review(s)</p></li>
+                    </ul>
+                    <p>*Super Bright - 360 Degrees Shining 2500Lm 6500K Cool White E26 socket, 25W LED equal 200W incandescent bulb</p>
+                    <p>*Energy Saving - Power consumption is 1/10 of incandescent bulb, 2/3 of energy-saving bulb under the same brightness</p>
+                    <h3><span class="price">$22.95</span></h3>
+                    <h5>Quantity :</h5>
+                    <input id="quantityInput" type="number" size="10" name="quantityNumber" value="1" /><br>
+                    <input id="detailToCart" type="button" value="Add To Cart" />
+                </div>
+            </div>
+        </div>
+
+        <!-- productDescription
+        ================================================== -->
+        <div id="productDescription" class="container">
+            <div class="row">
+                <div class="tab">
+                    <button class="tablinks" onclick="changeTab(event, 'productDes')" id="defaultOpen"><h5 class="tabTitle">Description</h5></button>
+                    <button class="tablinks" onclick="changeTab(event, 'customerReview')"><h5 class="tabTitle">Reviews</h5></button>
+                </div>
+
+                <div id="productDes" class="tabContent container">
+                    <h3>Product Description</h3>
+                    <pre>
+Advantages of LED corn light:
+• Energy saving (As bright as Incandescent Bulb 250w, but consuming only 10% of energy)
+• Long lifespan
+• High brightness
+• High color rendering
+• No flicker
+• Instant on
+
+
+The biggest weakness of LED bulb are large amount of heat, which will shorten the lifespan of the light or damage the light, and LED bulb is not 360 degrees shining, which means you can’t get a consistent uniform light for all area.
+
+This corn cob led bulb has better quality LED driver circuit (less heat, more stable, long lifespan), and aviation aluminum lamp structure ( fast cooling, good quality).
+
+The aluminum structure of corn led bulb can solve the heat dissipation problem very well, this structure also allows the LED beads to be arrayed on the lamp body uniformly, which will ensure the 360 degrees shining of light, no dark area on the back.
+
+
+Specification:
+• Voltage:AC 85V～265V
+• Wattage: 25W
+• LED Qty: 130 pcs 5730SMD
+• Brightness: 2500 lm
+• Color Temperature: 6500 Kelvin
+• Socket: E26
+• Light Color: Daylight white
+• Emitting Angle: 360 degrees
+• Item Weight: 125g
+• Dimension: φ1.5 x 6.2 inch
+
+Warm Tips:
+•This product is not waterproof, can not adjust the brightness.
+•Make sure To Remove Or Bypass The Electronic Ballast In The Fixture Before Install The Led Corn Bulb.
+•Make Sure To Cut Off The Power Before Install The Led Corn Bulb.
+                </pre>
+                </div>
+
+                <div id="customerReview" class="tabContent container">
+                    <h3>Customer Reviews</h3>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="pro-rate">
+                                <li class="product-rate">
+                                    <div class="greenStar">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Avg.Customer rating number-->
+                        <div class="col-md-2"> 4 out of 5</div>
+                        <!-- add review button-->
+                        <div class="col-md-5">
+                            <button id="addReview" onclick="displayAddReview()">Add My Review</button>
+                        </div>
+                    </div>
+                    <!--submit review-->
+                    <div id="inputReviewArea" style="display:none;">
+                        <hr class="review">
+                        <h5 class="text-left">Add My Review Rating: </h5>
+                        <div class="ratingStar">
+                            <div class="rating">
+                                <span><input type="radio" name="rating" id="str5" value="5"><label for="str5"></label></span>
+                                <span><input type="radio" name="rating" id="str4" value="4"><label for="str4"></label></span>
+                                <span><input type="radio" name="rating" id="str3" value="3"><label for="str3"></label></span>
+                                <span><input type="radio" name="rating" id="str2" value="2"><label for="str2"></label></span>
+                                <span><input type="radio" name="rating" id="str1" value="1"><label for="str1"></label></span>
+                            </div>
+                        </div>
+                        <textarea id="inputReview" placeholder="Your Message" ></textarea>
+                        <input id="submitReview" type="button" value="Submit My Review" />
+                    </div>
+
+                    <!-- existing review starts here-->
+                    <hr class="review">
+                    <!--<p>There is no customer review yet</p>-->
+                    <div class="reviewHistory">
+                        <h5>Reviewer Name</h5>
+                        <p>Review date: exp: 06/20/2018</p>
+                        <ul class="pro-rate">
+                            <li class="product-rate">
+                                <div class="">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>I purchased this 120W Daylight LED Corn Light Bulb to use in a Pole Barn (110' X 72' with a 24' high ceiling)
+                            that was just built. Very happy with the results! It easily threads right into an E39 Mogul socket.
+                            ONE bulb at 24' high lights the Entire barn up Extremely Well with bright and even white light.
+                            No issues with glare or flicker. The lifespan of this bulb is 35,000 hours which is great. Very satisfied customer!</p>
+                    </div>
+
+                    <hr class="review">
+                    <div class="reviewHistory">
+                        <h5>Reviewer Name</h5>
+                        <p>Review date: exp: 06/21/2018</p>
+                        <ul class="pro-rate">
+                            <li class="product-rate">
+                                <div class="">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>I purchased this 120W Daylight LED Corn Light Bulb to use in a Pole Barn (110' X 72' with a 24' high ceiling)
+                            that was just built. Very happy with the results! It easily threads right into an E39 Mogul socket.
+                            ONE bulb at 24' high lights the Entire barn up Extremely Well with bright and even white light.
+                            No issues with glare or flicker. The lifespan of this bulb is 35,000 hours which is great. Very satisfied customer!</p>
+                    </div>
+
+                    <hr class="review">
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- relatedProduct
+        ================================================== -->
+        <div id="relatedProduct" class="container">
+            <div class="row">
+                <h3>Related Products</h3>
+                <div id="relatedContent">
+                    <div class="col-md-5ths">
+                        <div onClick="location.href='productDetail.html';" class="product-grid">
+                            <div class="product-grid-head">
+                                <div class="product-pic">
+                                    <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                    <p>
+                                        <a href="#">Product Light 1</a>
+                                        <span>From Store AAA</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-cust">
+                                    <a href="productDetail.html">Details</a>
+                                </div>
+                                <div class="product-info-price">
+                                    <a>$ 16.49</a>
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="addToCart">
+                                <a href="contactUs.html"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5ths">
+                        <div onClick="location.href='productDetail.html';" class="product-grid">
+                            <div class="product-grid-head">
+                                <div class="product-pic">
+                                    <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                    <p>
+                                        <a href="#">Product Light 1</a>
+                                        <span>From Store AAA</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-cust">
+                                    <a href="productDetail.html">Details</a>
+                                </div>
+                                <div class="product-info-price">
+                                    <a>$ 16.49</a>
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="addToCart">
+                                <a href="contactUs.html"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5ths">
+                        <div onClick="location.href='productDetail.html';" class="product-grid">
+                            <div class="product-grid-head">
+                                <div class="product-pic">
+                                    <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                    <p>
+                                        <a href="#">Product Light 1</a>
+                                        <span>From Store AAA</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-cust">
+                                    <a href="productDetail.html">Details</a>
+                                </div>
+                                <div class="product-info-price">
+                                    <a>$ 16.49</a>
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="addToCart">
+                                <a href="contactUs.html"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5ths">
+                        <div onClick="location.href='productDetail.html';" class="product-grid">
+                            <div class="product-grid-head">
+                                <div class="product-pic">
+                                    <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                    <p>
+                                        <a href="#">Product Light 1</a>
+                                        <span>From Store AAA</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-cust">
+                                    <a href="productDetail.html">Details</a>
+                                </div>
+                                <div class="product-info-price">
+                                    <a>$ 16.49</a>
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="addToCart">
+                                <a href="contactUs.html"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5ths">
+                        <div onClick="location.href='productDetail.html';" class="product-grid">
+                            <div class="product-grid-head">
+                                <div class="product-pic">
+                                    <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                    <p>
+                                        <a href="#">Product Light 1</a>
+                                        <span>From Store AAA</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-cust">
+                                    <a href="productDetail.html">Details</a>
+                                </div>
+                                <div class="product-info-price">
+                                    <a>$ 16.49</a>
+                                </div>
+                                <div class="clear"> </div>
+                            </div>
+                            <div class="addToCart">
+                                <a href="contactUs.html"> <span> </span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</section>
+
+<!-- footer and go to top button
+================================================== -->
+<div id="footerDiv"></div>
+<!-- javascript
+    ================================================== -->
+<script type="text/javascript" src="../assets/jsLib/jquery1.4.min.js"></script>
+<script src="../assets/jsLib/jquery.min.js"></script>
+<script src="../assets/jsLib/bootstrap.min.js"></script>
+<script src="../js/commonHeaderFooter.js"></script>
+<script src="../js/productDetail.js"></script>
+<!--product thumbnail image js-->
+<script>
+    var icons = document.getElementsByClassName("thumbnailImg");
+
+    for(var i=0; i<icons.length; i++) {
+        icons[i].onclick = function(){
+            document.getElementById("mainImg").src = this.src;
+        }
+    }
+</script>
+<!--change tab js-->
+<script>
+    function changeTab(evt, tabName) {
+        var i, tabContent, tablinks;
+        tabContent = document.getElementsByClassName("tabContent");
+        for (i = 0; i < tabContent.length; i++) {
+            tabContent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+<!--add review-->
+<script>
+    function displayAddReview() {
+        var x = document.getElementById("inputReviewArea");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>

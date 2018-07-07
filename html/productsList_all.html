@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green Building - All Products Lists</title>
+    <meta name="description" content="Home page of Green Building Project">
+    <meta name="author" content="lq3297401 / https://github.com/lq3297401">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel='icon' href='../assets/images/icons/tempLogo.ico' type=‘image/x-ico’>
+    <link rel="stylesheet" href="../assets/cssLib/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/productList_all.css">
+</head>
+
+<body>
+    <!-- javascript
+    ================================================== -->
+    <script src="../assets/jsLib/jquery.min.js"></script>
+    <script src="../assets/jsLib/bootstrap.min.js"></script>
+    <script src="../js/scrollup.js"></script>
+    <script src="../js/commonHeaderFooter.js"></script>
+    <script src="../js/productDetail.js"></script>
+<!-- Top Bar
+    ================================================== -->
+    <div id="headerDiv"></div>
+
+<!-- product Section
+    ================================================== -->
+    <section id="product">
+    <!-- features top
+        ================================================== -->
+        <div class="features" id="features_top">
+            <div class="cherry-box">
+                <div class="container">
+                    <div class="row row-edge">
+                        <div class="col-md-12 full-width">
+                            <div class="row">
+
+                                <div id="product_light" class=" item-1 clearfix odd col-md-5ths">
+                                    <div class="servcircle" onclick="location.href='productList.html';">
+                                        <img id="productImg_light" src="../assets/images/products/light.png" alt="light">
+                                        <h4 class="">Lights</h4>
+                                    </div>
+                                </div>
+
+                                <div id="product_airCondition" class=" item-2 clearfix even col-md-5ths">
+                                    <div class="servcircle">
+                                        <img id="productImg_airCondition" src="../assets/images/products/airCondition.png" alt="air condition">
+                                        <h4 class="">Air Conditions</h4>
+                                    </div>
+                                </div>
+
+                                <div id="product_solarPanel" class=" item-3 clearfix odd col-md-5ths">
+                                    <div class="servcircle">
+                                        <img id="productImg_solarPanel" src="../assets/images/products/solarPanel.png" alt="solar panel">
+                                        <h4 class="">Solar Panel</h4>
+                                    </div>
+                                </div>
+
+                                <div id="product_energyStorage" class=" item-4 clearfix even col-md-5ths">
+                                    <div class="servcircle">
+                                        <img id="productImg_energyStorage" src="../assets/images/products/energyStorage.png" alt="energy storage">
+                                        <h4 class="">Energy Storage</h4>
+                                    </div>
+                                </div>
+
+                                <div id="product_windowFirm" class=" item-5 clearfix odd col-md-5ths">
+                                    <div class="servcircle" onclick="location.href='productList.html';">
+                                        <img id="productImg_windowFirm" src="../assets/images/products/windowFirm.png" alt="window firm">
+                                        <h4 class="">Window Firm</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--You can start from here-->
+    <section id="mainList">
+    <!-- viewAllProducts
+        ================================================== -->
+        <div id="viewAllProducts" class="text-center" style="margin-top: 2%">
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-8" id="SearchBar">
+                            <input type="search" class="form-control" placeholder="Search">
+                        </div>
+                        <div class="col-md-4" id="SortFeature" name="SortFeature" font>
+                            <select class="form-control">
+                                <option value="order by unit_price">Price(Low-High)</option>
+                                <option value="order by unit_price desc">Price(High-Low)</option>
+                                <option value="">Avg. Customer Review(High - Low)</option>
+                                <option value="order by product_name">Category(A-Z)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-md-2">
+                        <div id="searchFilter">
+                            <div id="divPrice">
+                            <label style="text-align: left;margin-left: -70%">Price ($)</label><br>
+                            <label class="rdbPrice"><input type="radio" name="price" style="align-items: left" value=""> Under USD 25</label><br>
+                            <label class="rdbPrice"><input type="radio" name="price" value="" > USD 25 to USD 50</label><br>
+                            <label class="rdbPrice"><input type="radio" name="price" value="" > USD 50 to USD 100</label><br>
+                            <label class="rdbPrice"><input type="radio" name="price" value="" > Over USD 100</label><br>
+                          <label class="rdbPrice">  <input type="radio" name="price" value="" > Custom</label><br>
+                           <div class="form-inline" id="custom">
+                              <input type="number" min="0" max="1000" class="form-control " id="MinPrice" placeholder="Low"/>
+                              <label for="MaxPrice" class="" id="lblTo"> to </label>
+                              <input type="number" min="0" max="1000" class=" form-control  " id="MaxPrice" placeholder="High"/>
+                              <input type="button" class="form-control " value=">" id="btnPriceFiltter">
+                          </div>
+                      </div>
+                          <hr>
+
+                          <div id="divShipping">
+                          <label style="text-align: left;margin-left: -70%">Shopping</label><br>
+                            <label class="rdbshipping"><input type="checkbox" name="shipping" style="align-items: left" value="">Free Shiping</label><br>
+                            <label class="rdbshipping"><input type="checkbox" name="shipping" style="align-items: left" value="">Ready to ship in 1 bussiness day</label><br>
+                            <label class="rdbshipping"><input type="checkbox" name="shipping" style="align-items: left" value="">Ready to ship in 3 bussiness days</label>
+                        </div>
+                        <hr>
+                            <div id="divShopLocation">
+                            <label style="text-align: left;margin-left: -55%">Shop Location</label><br>
+                            <label class="rdbShoplocation"><input type="radio" name="shopLocation" style="align-items: left" value=""> Anywhere</label><br>
+                            <label class="rdbShoplocation"><input type="radio" name="shopLocation" style="align-items: left" value=""> US</label><br>
+                            <label class="rdbShoplocation"><input type="radio" name="shopLocation" style="align-items: left" value=""> Custom</label><br>
+                            <div class="form-inline">
+                                <input type="text" id="inpLocation" class="form-control" placeholder="Location">
+                                <input type="button" class="form-control" value=">" id="btnLocationFiltter">
+                            </div>
+                            </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-10">
+                    <div id="productList_single">
+                        <div class="col-md-3">
+                            <div onClick="location.href='productDetail.html';" class="product-grid">
+                                <div class="product-grid-head">
+                                    <div class="product-pic">
+                                        <a href="#"><img src="../assets/images/products/lightExp.png" title="product-name" /></a>
+                                        <p>
+                                            <a href="#">Product Light 1</a>
+                                            <span>From Store AAA</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="product-info">
+                                    <div class="product-info-cust">
+                                        <a href="productDetail.html">Details</a>
+                                    </div>
+                                    <div class="product-info-price">
+                                        <a>$ 16.49</a>
+                                    </div>
+                                    <div class="clear"> </div>
+                                </div>
+                                <div class="addToCart">
+                                    <a href="contactUs.html"> <span> </span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer and go to top button
+    ================================================== -->
+    <div id="footerDiv"></div>
+
+</body>
+</html>
